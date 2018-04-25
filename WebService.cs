@@ -18,6 +18,14 @@ namespace AsyncWork
             return data;
         }
 
+        public static string GetText(string search)
+        {
+            var client = new WebClient();
+            var data = client.DownloadString(talkToUrl + "?s=" + search);
+
+            return data;
+        }
+
         public static List<Song> GetSongs()
 		{
 			var client = new WebClient ();

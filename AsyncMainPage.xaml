@@ -11,21 +11,22 @@
             <Button x:Name="btnCategories" Text="Categories"></Button>
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal" BackgroundColor="gray">
-            <Label x:Name="lblSearch" Text="Search Here..." HorizontalOptions="FillAndExpand"></Label>
+        <StackLayout Orientation="Horizontal" BackgroundColor="White">
+            <Entry x:Name="entSearch" WidthRequest="100" FontSize="Small"
+                   BackgroundColor="White" HorizontalOptions="FillAndExpand"></Entry>
             <Button x:Name="btnSearch" IsVisible="True" Text="go"></Button>
         </StackLayout>
 
         <StackLayout Orientation="Vertical">
-            <BoxView Color="black" VerticalOptions="FillAndExpand">
+            <BoxView Color="Black" VerticalOptions="FillAndExpand">
                 
             </BoxView>
-            <Label x:Name="label" IsVisible="True" Text="hello"
+            <Label x:Name="lblLabel" IsVisible="True" Text="hello"
                VerticalOptions="Center" HorizontalOptions="Center"></Label>
             <Button x:Name="button" IsVisible="True" Text="Test Web Service"></Button>
             <ProgressBar x:Name="progressBar" IsVisible="false"/>
 
-            <BoxView Color="black" VerticalOptions="FillAndExpand">
+            <BoxView Color="Black" VerticalOptions="FillAndExpand">
 
             </BoxView>
 

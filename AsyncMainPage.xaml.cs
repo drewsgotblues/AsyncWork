@@ -11,23 +11,24 @@ namespace AsyncWork
 
 		public AsyncMainPage ()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 
-			//buttonRefresh.Clicked += (sender, e) => OnRefresh(true);
-			//listSongs.Refreshing += (sender, e) => OnRefresh(false);
+            //buttonRefresh.Clicked += (sender, e) => OnRefresh(true);
+            //listSongs.Refreshing += (sender, e) => OnRefresh(false);
             //button.Clicked += OnButtonClicked;
+            btnSearch.Clicked += OnSearch;
         }
 
         void OnSearch(object sender, EventArgs e)
         {
-            var s = WebService.GetText();
-            label.Text = s;
+            var s = WebService.GetText(entSearch.Text);
+            lblLabel.Text = s;
         }
 
         void OnButtonClicked(object sender, EventArgs e)
         {
             var s = WebService.GetText();
-            label.Text = s;
+            lblLabel.Text = s;
         }
 
         void ShowProgressBar (bool bShow)

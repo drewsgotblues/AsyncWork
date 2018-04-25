@@ -8,7 +8,15 @@ public class ImageHandler : IHttpHandler
 
     public void ProcessRequest(HttpContext context)
     {
-        context.Response.Write("asdf");
+	string s;
+	if (context.Request["s"] != null)
+	{
+		s = "Hello " + context.Request["s"].ToString();
+	}else{
+		s = "missing search";
+	}
+
+        context.Response.Write(s);
     }
 
     public bool IsReusable
