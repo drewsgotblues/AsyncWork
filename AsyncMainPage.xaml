@@ -4,6 +4,7 @@
              x:Class="AsyncWork.AsyncMainPage">
     <!--<ContentPage.Content>
         <ScrollView>-->
+    
     <StackLayout>
         <StackLayout Orientation="Horizontal" Spacing="2">
             <Button x:Name="btnHome" Text="Home"></Button>
