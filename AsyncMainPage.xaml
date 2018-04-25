@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AsyncWork.AsyncMainPage">
+    <!--<ContentPage.Content>
+        <ScrollView>-->
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" Spacing="2">
+            <Button x:Name="btnHome" Text="Home"></Button>
+            <Button x:Name="btnCategories" Text="Categories"></Button>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" BackgroundColor="gray">
+            <Label x:Name="lblSearch" Text="Search Here..." HorizontalOptions="FillAndExpand"></Label>
+            <Button x:Name="btnSearch" IsVisible="True" Text="go"></Button>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical">
+            <BoxView Color="black" VerticalOptions="FillAndExpand">
+                
+            </BoxView>
+            <Label x:Name="label" IsVisible="True" Text="hello"
+               VerticalOptions="Center" HorizontalOptions="Center"></Label>
+            <Button x:Name="button" IsVisible="True" Text="Test Web Service"></Button>
+            <ProgressBar x:Name="progressBar" IsVisible="false"/>
+
+            <BoxView Color="black" VerticalOptions="FillAndExpand">
+
+            </BoxView>
+
+            <StackLayout HeightRequest="150" BackgroundColor="Azure" Orientation="Vertical">
+                <StackLayout HeightRequest="40" Orientation="Horizontal">
+                    <Label x:Name="lblFormal" Text="Hello How are you?" TextColor="Black" FontSize="Large"></Label>
+                    <Button x:Name="btnPlayFormal" Text="Play" FontSize="Small"></Button>
+                </StackLayout>
+                <StackLayout HeightRequest="40" Orientation="Horizontal">
+                    <Label x:Name="lblSemiFormal" Text="Hello How are you?" TextColor="Black" FontSize="Large"></Label>
+                    <Button x:Name="btnPlayInformal" Text="Play" FontSize="Small"></Button>
+                </StackLayout>
+                <StackLayout HeightRequest="40" Orientation="Horizontal">
+                    <Label x:Name="lblInformal" Text="Hello How are you?" TextColor="Black" FontSize="Large"></Label>
+                    <Button x:Name="btnPlaySemiformal" Text="Play" FontSize="Small"></Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        
+    </StackLayout>
+    <!--</ScrollView>
+    </ContentPage.Content>-->
+</ContentPage>
